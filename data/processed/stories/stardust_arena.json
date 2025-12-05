@@ -1,0 +1,120 @@
+
+
+
+    {
+      "id": "stardust_arena",
+      "name": "The Stardust Arena Trials",
+      "genre": "Supernatural Sci-Fi Fantasy / Action",
+      "targetMoods": ["excited", "happy", "energized"],
+      "scenes": [
+        {
+          "id": "sa_intro",
+          "description": "You stand in a glowing arena floating in space, surrounded by cheering cosmic beings.",
+          "templates": {
+            "happy": "The cheers feel like music, and the stardust under your feet sparkles in rhythm with your enthusiasm.",
+            "sad": "Even if you started out feeling low, the bright colors and kind faces in the crowd begin to pull you upward.",
+            "angry": "The roar of the arena gives your energy somewhere bold and bright to go instead of boiling inside you.",
+            "disgust": "The air here feels sharp and clean, the stardust bright and orderly, leaving little room for messy thoughts.",
+            "fear": "The arena looks huge, but a friendly glowing spirit floats to your side, promising to guide you through every step.",
+            "surprised": "You had not expected to become the center of a cosmic tournament, yet here you are, lit by a thousand distant stars.",
+            "neutral": "You notice the patterns of light, the strange banners and the quiet hum of energy under the arena floor."
+          },
+          "options": [
+            {
+              "id": "sa_intro_speed",
+              "text": "Choose the Trial of Speed.",
+              "nextScene": "sa_speed_trial"
+            },
+            {
+              "id": "sa_intro_puzzle",
+              "text": "Choose the Trial of Wisdom.",
+              "nextScene": "sa_puzzle_trial"
+            }
+          ]
+        },
+        {
+          "id": "sa_speed_trial",
+          "description": "A track of floating platforms appears, glowing with shifting starlight.",
+          "templates": {
+            "happy": "You leap from platform to platform with laughter in your chest, the stars rushing by in a joyful blur.",
+            "sad": "Each jump feels like a small, personal victory, and the crowd's warm cheers gently lift your spirits.",
+            "angry": "You hurl yourself forward with fierce determination, turning your sharp energy into focused movement.",
+            "disgust": "The clear lines of the platforms and the crisp air make the path feel pure, giving you something simple and clean to follow.",
+            "fear": "A guiding light marks the safest platforms, and you realize you do not have to jump the farthest to succeed.",
+            "surprised": "You are surprised at how quickly you adapt, your body finding a rhythm with the pulsing starlight.",
+            "neutral": "You move at a steady pace, learning how each platform responds under your feet as you go."
+          },
+          "options": [
+            {
+              "id": "sa_speed_finish",
+              "text": "Make one final leap to the finish ring.",
+              "nextScene": "sa_final_ceremony"
+            },
+            {
+              "id": "sa_speed_slow",
+              "text": "Slow down and enjoy the view before finishing.",
+              "nextScene": "sa_view_pause"
+            }
+          ]
+        },
+        {
+          "id": "sa_puzzle_trial",
+          "description": "A cluster of glowing symbols spins slowly in the air before you.",
+          "templates": {
+            "happy": "The puzzle feels like a fun game, and each symbol that clicks into place sends a little burst of satisfaction through you.",
+            "sad": "The clear rules and gentle ticking of the symbols are comforting; for once, the world makes sense if you just keep trying.",
+            "angry": "You pour your intensity into studying the symbols, breaking the problem apart with sharp focus instead of frustration.",
+            "disgust": "The puzzle's structure is neat and elegant, a welcome contrast to anything that felt messy or wrong earlier.",
+            "fear": "A soft voice from a nearby star spirit gives you hints, reminding you that you do not have to solve everything alone.",
+            "surprised": "You did not expect to enjoy thinking this hard, yet each small discovery feels exciting.",
+            "neutral": "You calmly test patterns and combinations, watching how the symbols respond."
+          },
+          "options": [
+            {
+              "id": "sa_puzzle_finish",
+              "text": "Place the last symbol into the center.",
+              "nextScene": "sa_final_ceremony"
+            },
+            {
+              "id": "sa_puzzle_hint",
+              "text": "Ask the arena spirit for one more hint.",
+              "nextScene": "sa_view_pause"
+            }
+          ]
+        },
+        {
+          "id": "sa_view_pause",
+          "description": "For a moment, the arena slows, and you can see the whole galaxy spread out around you.",
+          "templates": {
+            "happy": "The view is breathtaking, a huge cosmic celebration that matches your bright mood.",
+            "sad": "The stars make your problems feel a little smaller, and the gentle glow around you feels like a quiet hug.",
+            "angry": "The vastness of space takes the edge off your feelings, reminding you there is room for everything to soften.",
+            "disgust": "Out here, nothing is cluttered or cramped; the galaxy looks clean and balanced, and you breathe a bit easier.",
+            "fear": "Surrounded by so many lights, you no longer feel alone. Each tiny star feels like a small, distant friend.",
+            "surprised": "You had not realized how far you had come, standing in the center of all this starlight.",
+            "neutral": "You stand quietly, observing the calm motion of distant planets and drifting comets."
+          },
+          "options": [
+            {
+              "id": "sa_view_to_final",
+              "text": "Return to the arena floor to hear the results.",
+              "nextScene": "sa_final_ceremony"
+            }
+          ]
+        },
+        {
+          "id": "sa_final_ceremony",
+          "description": "The crowd gathers as a beam of light crowns you with stardust.",
+          "templates": {
+            "happy": "You feel like a hero of a bright, impossible story, the arena echoing your joy back to you.",
+            "sad": "The applause does not erase everything, but it gives you a clear moment of pride you can carry with you.",
+            "angry": "You stand strong and calm, your energy now steady, knowing you faced the trials and turned your force into skill.",
+            "disgust": "The ceremony feels pure and simple: you tried, you adapted, and now you are being thanked by the stars themselves.",
+            "fear": "It turns out the arena was never here to judge you harshly; it just wanted to show you how capable you already are.",
+            "surprised": "You are surprised at how natural the stardust crown feels, as if a part of you always belonged up here.",
+            "neutral": "You accept the glow of the stardust crown quietly, noting the gentle warmth on your head and shoulders."
+          },
+          "options": []
+        }
+      ]
+    }

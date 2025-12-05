@@ -1,0 +1,140 @@
+
+
+
+    {
+      "id": "abandoned_station",
+      "name": "The Abandoned Train Station",
+      "genre": "Light Mystery / Realistic Exploration",
+      "targetMoods": ["neutral", "curiosity"],
+      "scenes": [
+        {
+          "id": "at_intro",
+          "description": "You step into an old train station where the clocks have stopped but the air still remembers the sound of trains.",
+          "templates": {
+            "happy": "You feel a little thrill of adventure, as if you have discovered a secret place that belongs only to you for now.",
+            "sad": "The quiet emptiness matches your mood, but there is something gentle about the dust and sunlight that does not feel unfriendly.",
+            "angry": "The stillness gives your thoughts room to spread out and cool, the station offering no arguments, just silent space.",
+            "disgust": "There is dust and peeling paint, but the structure itself feels honest and solid, like it has nothing to hide.",
+            "fear": "The station is silent but not menacing; light filters through high windows, and you can clearly see every corner.",
+            "surprised": "You did not expect an empty place to feel this full of stories, as if people had just stepped out for a moment.",
+            "neutral": "You notice the details: old benches, faded posters, a timetable frozen on a long-gone afternoon."
+          },
+          "options": [
+            {
+              "id": "at_intro_waiting_room",
+              "text": "Explore the waiting room.",
+              "nextScene": "at_waiting_room"
+            },
+            {
+              "id": "at_intro_platform",
+              "text": "Walk out onto the platform.",
+              "nextScene": "at_platform"
+            }
+          ]
+        },
+        {
+          "id": "at_waiting_room",
+          "description": "Rows of empty seats face a dusty window, and an old bulletin board hangs crookedly on the wall.",
+          "templates": {
+            "happy": "You imagine the chatter and laughter that once filled this room and almost hear echoes of old conversations.",
+            "sad": "The quiet feels gentle rather than cold, as if the room is patiently waiting for someone to notice it again.",
+            "angry": "Your steps sound firm on the floor, and the room takes your presence without complaint, letting your energy settle.",
+            "disgust": "Some of the posters are torn and faded, yet the simple lines of the benches and the large window feel strangely satisfying.",
+            "fear": "Every corner of the room is clearly visible in the daylight, and nothing moves except a few drifting dust motes.",
+            "surprised": "You spot a small object left behind on a seat, a tiny reminder that someone once sat here with their own story.",
+            "neutral": "You scan the room, noticing the worn fabric on the seats and the soft creak of the old floorboards."
+          },
+          "options": [
+            {
+              "id": "at_waiting_object",
+              "text": "Pick up the small object left on the seat.",
+              "nextScene": "at_found_item"
+            },
+            {
+              "id": "at_waiting_back_platform",
+              "text": "Leave the waiting room and go to the platform.",
+              "nextScene": "at_platform"
+            }
+          ]
+        },
+        {
+          "id": "at_platform",
+          "description": "You step onto the platform, where weeds grow between the tracks and a single rusty sign sways slightly in the breeze.",
+          "templates": {
+            "happy": "The open sky and long lines of the tracks make you feel pleasantly small in a big, interesting world.",
+            "sad": "The quiet platform feels like a place where people once said goodbye and hello, and somehow that thought is comforting.",
+            "angry": "The solid rails and straight tracks give your mind something steady to rest on, a path that does not argue or change.",
+            "disgust": "The rust and weeds are honest signs of time passing; nothing here pretends to be perfect, and that feels oddly refreshing.",
+            "fear": "You can see far in both directions, and there is nowhere for anything to hide. The space feels open and honest.",
+            "surprised": "You are surprised by how peaceful the empty tracks seem without trains, like a story paused but not broken.",
+            "neutral": "You observe the long stretch of rails, the pattern of sleepers and the faint smell of metal and old oil."
+          },
+          "options": [
+            {
+              "id": "at_platform_end",
+              "text": "Follow the tracks a short distance and then head home.",
+              "nextScene": "at_ending_walk"
+            },
+            {
+              "id": "at_platform_back_waiting",
+              "text": "Go back inside to explore the waiting room.",
+              "nextScene": "at_waiting_room"
+            }
+          ]
+        },
+        {
+          "id": "at_found_item",
+          "description": "In the waiting room, you find a small, worn ticket with a faded destination name.",
+          "templates": {
+            "happy": "The ticket feels like a tiny treasure, a secret link to someone else's journey that you now get to imagine.",
+            "sad": "You wonder who once held this ticket and whether they were nervous, hopeful or lonely, and somehow that makes you feel less alone.",
+            "angry": "You focus on the simple facts of the ticket, letting the clear print and straight edges pull your mind away from what upset you.",
+            "disgust": "The paper is worn but dry and harmless, more of a harmless relic than anything unpleasant.",
+            "fear": "The ticket is just paper, fragile and familiar. Nothing about it is threatening, only quietly mysterious.",
+            "surprised": "You are surprised that such a small, forgotten object can make the station feel suddenly full of possibilities.",
+            "neutral": "You examine the ticket, trying to read the faded destination and date."
+          },
+          "options": [
+            {
+              "id": "at_item_keep",
+              "text": "Put the ticket in your pocket and step out to the platform.",
+              "nextScene": "at_platform"
+            },
+            {
+              "id": "at_item_leave",
+              "text": "Place the ticket carefully back on the seat and look around once more.",
+              "nextScene": "at_ending_reflect"
+            }
+          ]
+        },
+        {
+          "id": "at_ending_walk",
+          "description": "You walk along the tracks until the station is just a shape behind you.",
+          "templates": {
+            "happy": "You leave feeling like you have discovered a quiet secret, the kind that makes the world feel richer.",
+            "sad": "Your mood is still soft and low, but the calm of the station and the open sky sit with you like a gentle companion.",
+            "angry": "The steady rhythm of your steps beside the tracks helps your thoughts line up into something more manageable.",
+            "disgust": "The fresh air and open space help clear your head as you leave the worn station behind you.",
+            "fear": "Knowing that nothing frightening was waiting at the station makes the path ahead feel more trustworthy.",
+            "surprised": "You did not expect an abandoned place to feel so alive with quiet stories as you walk away.",
+            "neutral": "You simply note the sound of your footsteps and the fading silhouette of the old station."
+          },
+          "options": []
+        },
+        {
+          "id": "at_ending_reflect",
+          "description": "You stand in the waiting room one last time, trying to imagine the day the station finally emptied.",
+          "templates": {
+            "happy": "You feel grateful for the small glimpse into another time, like you have visited a peaceful photograph.",
+            "sad": "The emptiness feels gentle now, like a pause instead of an ending, and you breathe a little easier.",
+            "angry": "Thinking about all the ordinary days that must have passed here helps your own problems feel less sharp.",
+            "disgust": "The room is old and imperfect, but also honest and calm, and that feels strangely refreshing.",
+            "fear": "You realize that this space is just a place, full of sunlight and dust, with nothing hiding in the corners.",
+            "surprised": "You are surprised by how attached you feel to a place you only just discovered.",
+            "neutral": "You take one last look around, committing the benches, the window and the crooked board to memory."
+          },
+          "options": []
+        }
+      ]
+    }
+ 

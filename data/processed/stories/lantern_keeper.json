@@ -1,0 +1,138 @@
+
+
+    {
+      "id": "lantern_keeper",
+      "name": "The Lantern Keeper's Quiet Night",
+      "genre": "Cozy Fantasy / Comfort Story",
+      "targetMoods": ["tired", "comfort-seeking", "sad"],
+      "scenes": [
+        {
+          "id": "lk_intro",
+          "description": "You arrive at a small cliffside village where a single lantern glows by the sea.",
+          "templates": {
+            "happy": "Even though you are already in a good mood, the gentle glow of the lantern feels like a friendly hello in the night.",
+            "sad": "You feel heavy and a bit hollow inside, but the warm orange light of the lantern looks like it has been waiting just for you.",
+            "angry": "Your thoughts are still tense and restless, yet the soft lantern light refuses to argue, simply shining with quiet patience.",
+            "disgust": "You feel off and uncomfortable, but the lantern's steady glow seems clean and simple, like a safe spot away from everything.",
+            "fear": "The night feels a little too big and too dark, but the lantern shines like a tiny promise that you are not alone here.",
+            "surprised": "You did not expect anyone to be awake at this hour, but the lantern blinks calmly through the dark, as if it knew you would come.",
+            "neutral": "You notice the single lantern burning by the sea, its light moving gently with the breeze."
+          },
+          "options": [
+            {
+              "id": "lk_intro_talk_keeper",
+              "text": "Walk up to the lantern keeper and say hello.",
+              "nextScene": "lk_meet_keeper"
+            },
+            {
+              "id": "lk_intro_sit",
+              "text": "Sit quietly near the lantern and watch the waves.",
+              "nextScene": "lk_sit_by_sea"
+            }
+          ]
+        },
+        {
+          "id": "lk_meet_keeper",
+          "description": "You stand beside the old lantern keeper, who looks at you with kind, tired eyes.",
+          "templates": {
+            "happy": "The keeper smiles softly. Your own light mood seems to brighten the lantern as you chat about small things that feel strangely important.",
+            "sad": "The keeper listens more than he speaks, nodding slowly as you share as much or as little as you want. His voice is low, calm, and never hurried.",
+            "angry": "The keeper does not flinch at your sharp words. He simply lets them pass like waves against stone, answering with simple, steady sentences.",
+            "disgust": "The keeper notices your unease and avoids difficult topics, instead pointing out the clean night air and the gentle rhythm of the waves below.",
+            "fear": "The keeper talks about how the lantern has survived every storm. His words are gentle, reminding you that nights always give way to mornings.",
+            "surprised": "The keeper seems to know more about how you feel than you told him, finishing your thoughts with quiet, reassuring comments.",
+            "neutral": "The keeper tells you simple stories about ships, tides and how he always lights the lantern at dusk and puts it out at dawn."
+          },
+          "options": [
+            {
+              "id": "lk_keeper_walk",
+              "text": "Ask the keeper to walk with you along the cliff.",
+              "nextScene": "lk_walk_cliff"
+            },
+            {
+              "id": "lk_keeper_stay",
+              "text": "Stay by the lantern and simply listen to him talk.",
+              "nextScene": "lk_sit_by_sea"
+            }
+          ]
+        },
+        {
+          "id": "lk_sit_by_sea",
+          "description": "You sit where you can see both the lantern and the dark sea below.",
+          "templates": {
+            "happy": "You feel pleasantly heavy and relaxed, as if the day is finally allowed to be over. The sea sounds like a slow, friendly song.",
+            "sad": "Your chest still hurts a bit, but the waves keep moving, and the lantern keeps shining, and it becomes easier to breathe.",
+            "angry": "The crash of the waves slowly matches your heartbeat, and the steady lantern light gives your thoughts something calm to land on.",
+            "disgust": "The night air feels cleaner than anything that happened today. The lantern, the sea, the cliffside all feel quietly separate from your worries.",
+            "fear": "You keep looking at the edges of the cliff and the shadows, but nothing moves except the water and the safe, constant glow of the lantern.",
+            "surprised": "You are surprised by how quickly your body starts to relax here, as if the bench, the sea and the soft light have been rehearsing this moment.",
+            "neutral": "You sit, listening to the sea and watching the lantern flicker. Time passes gently without you needing to do anything at all."
+          },
+          "options": [
+            {
+              "id": "lk_end_sleep",
+              "text": "Let your eyes close and drift toward sleep.",
+              "nextScene": "lk_ending_rest"
+            },
+            {
+              "id": "lk_end_thank",
+              "text": "Stand up, thank the lantern keeper, and head home.",
+              "nextScene": "lk_ending_farewell"
+            }
+          ]
+        },
+        {
+          "id": "lk_walk_cliff",
+          "description": "You and the keeper walk a short path along the cliff, the lantern swinging gently in his hand.",
+          "templates": {
+            "happy": "You share small jokes and memories, the path ahead glowing just enough for every step to feel sure and easy.",
+            "sad": "You walk mostly in silence, but it is the kind of silence that makes the cliff, the sea and your thoughts feel a little lighter.",
+            "angry": "The cool air and firm ground under your feet slowly smooth the sharper corners of your mood as the lantern light moves in a gentle rhythm.",
+            "disgust": "Away from noise and messy thoughts, you simply follow the small circle of light, feeling the world narrow into something manageable.",
+            "fear": "The keeper stays close, keeping the lantern between you and the dark. Each step proves the path is safe, and you start to believe it.",
+            "surprised": "You did not expect such a simple walk to feel meaningful, yet every wave and distant light seems to carry a quiet message.",
+            "neutral": "The walk is calm and short. The lantern shows each stone and curve of the path, nothing more and nothing less."
+          },
+          "options": [
+            {
+              "id": "lk_walk_back",
+              "text": "Return to the lantern post and sit again.",
+              "nextScene": "lk_sit_by_sea"
+            },
+            {
+              "id": "lk_walk_home",
+              "text": "Say goodbye and walk back toward the village lights.",
+              "nextScene": "lk_ending_farewell"
+            }
+          ]
+        },
+        {
+          "id": "lk_ending_rest",
+          "description": "You allow yourself to rest at last.",
+          "templates": {
+            "happy": "You fall asleep with a small smile, the lantern's glow still warm behind your closed eyes.",
+            "sad": "Sleep comes softly, not as an escape, but as a gentle promise that tomorrow might feel a little less heavy.",
+            "angry": "Your thoughts quiet just enough for you to rest, held by the steady rhythm of waves and light.",
+            "disgust": "You feel cleaner inside, as if the night air and the sea washed away the worst of the day before you sleep.",
+            "fear": "The last thing you notice is the lantern glow, constant and kind, before you finally drift off.",
+            "surprised": "You are surprised by how safe and calm you feel as you drift into sleep.",
+            "neutral": "You simply become more and more relaxed until sleep feels like the most natural next step."
+          },
+          "options": []
+        },
+        {
+          "id": "lk_ending_farewell",
+          "description": "You say goodbye to the lantern keeper and head back, carrying the calm of the night with you.",
+          "templates": {
+            "happy": "You walk away with light steps, as if the night itself had wished you a good tomorrow.",
+            "sad": "Things are not magically fixed, but your chest feels a little less tight as you walk toward home.",
+            "angry": "You still remember what bothered you, but it no longer fills your whole mind. You have room to breathe.",
+            "disgust": "The quiet path and cool air leave your thoughts clearer than they were when you arrived.",
+            "fear": "With every step away, you feel a bit braver, as if the lantern's courage is still walking beside you.",
+            "surprised": "You did not expect a simple lantern and an old keeper to help this much, yet here you are, calmer than before.",
+            "neutral": "You head home, feeling simply okay, which is exactly enough for tonight."
+          },
+          "options": []
+        }
+      ]
+    }

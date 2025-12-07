@@ -1,0 +1,101 @@
+{
+  "id": "stardust_arena",
+  "name": "Dummy Story 2 - Stardust Arena",
+  "genre": "Debug / Test",
+  "targetMoods": ["excited", "happy", "energized"],
+  "scenes": [
+    {
+      "id": "sa_scene1",
+      "description": "Story 2, Scene 1 (intro).",
+      "templates": {
+        "happy": "This is STORY 2, SCENE 1, EMOTION HAPPY.",
+        "sad": "This is STORY 2, SCENE 1, EMOTION SAD.",
+        "angry": "This is STORY 2, SCENE 1, EMOTION ANGRY.",
+        "disgust": "This is STORY 2, SCENE 1, EMOTION DISGUST.",
+        "fear": "This is STORY 2, SCENE 1, EMOTION FEAR.",
+        "surprised": "This is STORY 2, SCENE 1, EMOTION SURPRISED.",
+        "neutral": "This is STORY 2, SCENE 1, EMOTION NEUTRAL."
+      },
+      "options": [
+        {
+          "id": "sa_s1_opt1",
+          "text": "Go to scene 2A of story 2.",
+          "nextScene": "sa_scene2A"
+        },
+        {
+          "id": "sa_s1_opt2",
+          "text": "Go to scene 2B of story 2.",
+          "nextScene": "sa_scene2B"
+        }
+      ]
+    },
+    {
+      "id": "sa_scene2A",
+      "description": "Story 2, Scene 2A.",
+      "templates": {
+        "happy": "This is STORY 2, SCENE 2A, EMOTION HAPPY.",
+        "sad": "This is STORY 2, SCENE 2A, EMOTION SAD.",
+        "angry": "This is STORY 2, SCENE 2A, EMOTION ANGRY.",
+        "disgust": "This is STORY 2, SCENE 2A, EMOTION DISGUST.",
+        "fear": "This is STORY 2, SCENE 2A, EMOTION FEAR.",
+        "surprised": "This is STORY 2, SCENE 2A, EMOTION SURPRISED.",
+        "neutral": "This is STORY 2, SCENE 2A, EMOTION NEUTRAL."
+      },
+      "options": [
+        {
+          "id": "sa_s2A_opt1",
+          "text": "Go to ending A of story 2.",
+          "nextScene": "sa_endA"
+        }
+      ]
+    },
+    {
+      "id": "sa_scene2B",
+      "description": "Story 2, Scene 2B.",
+      "templates": {
+        "happy": "This is STORY 2, SCENE 2B, EMOTION HAPPY.",
+        "sad": "This is STORY 2, SCENE 2B, EMOTION SAD.",
+        "angry": "This is STORY 2, SCENE 2B, EMOTION ANGRY.",
+        "disgust": "This is STORY 2, SCENE 2B, EMOTION DISGUST.",
+        "fear": "This is STORY 2, SCENE 2B, EMOTION FEAR.",
+        "surprised": "This is STORY 2, SCENE 2B, EMOTION SURPRISED.",
+        "neutral": "This is STORY 2, SCENE 2B, EMOTION NEUTRAL."
+      },
+      "options": [
+        {
+          "id": "sa_s2B_opt1",
+          "text": "Go to ending B of story 2.",
+          "nextScene": "sa_endB"
+        }
+      ]
+    },
+    {
+      "id": "sa_endA",
+      "description": "Story 2, Ending A.",
+      "templates": {
+        "happy": "This is STORY 2, ENDING A, EMOTION HAPPY.",
+        "sad": "This is STORY 2, ENDING A, EMOTION SAD.",
+        "angry": "This is STORY 2, ENDING A, EMOTION ANGRY.",
+        "disgust": "This is STORY 2, ENDING A, EMOTION DISGUST.",
+        "fear": "This is STORY 2, ENDING A, EMOTION FEAR.",
+        "surprised": "This is STORY 2, ENDING A, EMOTION SURPRISED.",
+        "neutral": "This is STORY 2, ENDING A, EMOTION NEUTRAL."
+      },
+      "options": []
+    },
+    {
+      "id": "sa_endB",
+      "description": "Story 2, Ending B.",
+      "templates": {
+        "happy": "This is STORY 2, ENDING B, EMOTION HAPPY.",
+        "sad": "This is STORY 2, ENDING B, EMOTION SAD.",
+        "angry": "This is STORY 2, ENDING B, EMOTION ANGRY.",
+        "disgust": "This is STORY 2, ENDING B, EMOTION DISGUST.",
+        "fear": "This is STORY 2, ENDING B, EMOTION FEAR.",
+        "surprised": "This is STORY 2, ENDING B, EMOTION SURPRISED.",
+        "neutral": "This is STORY 2, ENDING B, EMOTION NEUTRAL."
+      },
+      "options": []
+    }
+  ]
+}

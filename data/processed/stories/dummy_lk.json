@@ -1,0 +1,101 @@
+{
+  "id": "lantern_keeper",
+  "name": "Dummy Story 1 - Lantern Keeper",
+  "genre": "Debug / Test",
+  "targetMoods": ["tired", "comfort-seeking", "sad"],
+  "scenes": [
+    {
+      "id": "lk_scene1",
+      "description": "Story 1, Scene 1 (intro).",
+      "templates": {
+        "happy": "This is STORY 1, SCENE 1, EMOTION HAPPY.",
+        "sad": "This is STORY 1, SCENE 1, EMOTION SAD.",
+        "angry": "This is STORY 1, SCENE 1, EMOTION ANGRY.",
+        "disgust": "This is STORY 1, SCENE 1, EMOTION DISGUST.",
+        "fear": "This is STORY 1, SCENE 1, EMOTION FEAR.",
+        "surprised": "This is STORY 1, SCENE 1, EMOTION SURPRISED.",
+        "neutral": "This is STORY 1, SCENE 1, EMOTION NEUTRAL."
+      },
+      "options": [
+        {
+          "id": "lk_s1_opt1",
+          "text": "Go to scene 2A of story 1.",
+          "nextScene": "lk_scene2A"
+        },
+        {
+          "id": "lk_s1_opt2",
+          "text": "Go to scene 2B of story 1.",
+          "nextScene": "lk_scene2B"
+        }
+      ]
+    },
+    {
+      "id": "lk_scene2A",
+      "description": "Story 1, Scene 2A.",
+      "templates": {
+        "happy": "This is STORY 1, SCENE 2A, EMOTION HAPPY.",
+        "sad": "This is STORY 1, SCENE 2A, EMOTION SAD.",
+        "angry": "This is STORY 1, SCENE 2A, EMOTION ANGRY.",
+        "disgust": "This is STORY 1, SCENE 2A, EMOTION DISGUST.",
+        "fear": "This is STORY 1, SCENE 2A, EMOTION FEAR.",
+        "surprised": "This is STORY 1, SCENE 2A, EMOTION SURPRISED.",
+        "neutral": "This is STORY 1, SCENE 2A, EMOTION NEUTRAL."
+      },
+      "options": [
+        {
+          "id": "lk_s2A_opt1",
+          "text": "Go to ending A of story 1.",
+          "nextScene": "lk_endA"
+        }
+      ]
+    },
+    {
+      "id": "lk_scene2B",
+      "description": "Story 1, Scene 2B.",
+      "templates": {
+        "happy": "This is STORY 1, SCENE 2B, EMOTION HAPPY.",
+        "sad": "This is STORY 1, SCENE 2B, EMOTION SAD.",
+        "angry": "This is STORY 1, SCENE 2B, EMOTION ANGRY.",
+        "disgust": "This is STORY 1, SCENE 2B, EMOTION DISGUST.",
+        "fear": "This is STORY 1, SCENE 2B, EMOTION FEAR.",
+        "surprised": "This is STORY 1, SCENE 2B, EMOTION SURPRISED.",
+        "neutral": "This is STORY 1, SCENE 2B, EMOTION NEUTRAL."
+      },
+      "options": [
+        {
+          "id": "lk_s2B_opt1",
+          "text": "Go to ending B of story 1.",
+          "nextScene": "lk_endB"
+        }
+      ]
+    },
+    {
+      "id": "lk_endA",
+      "description": "Story 1, Ending A.",
+      "templates": {
+        "happy": "This is STORY 1, ENDING A, EMOTION HAPPY.",
+        "sad": "This is STORY 1, ENDING A, EMOTION SAD.",
+        "angry": "This is STORY 1, ENDING A, EMOTION ANGRY.",
+        "disgust": "This is STORY 1, ENDING A, EMOTION DISGUST.",
+        "fear": "This is STORY 1, ENDING A, EMOTION FEAR.",
+        "surprised": "This is STORY 1, ENDING A, EMOTION SURPRISED.",
+        "neutral": "This is STORY 1, ENDING A, EMOTION NEUTRAL."
+      },
+      "options": []
+    },
+    {
+      "id": "lk_endB",
+      "description": "Story 1, Ending B.",
+      "templates": {
+        "happy": "This is STORY 1, ENDING B, EMOTION HAPPY.",
+        "sad": "This is STORY 1, ENDING B, EMOTION SAD.",
+        "angry": "This is STORY 1, ENDING B, EMOTION ANGRY.",
+        "disgust": "This is STORY 1, ENDING B, EMOTION DISGUST.",
+        "fear": "This is STORY 1, ENDING B, EMOTION FEAR.",
+        "surprised": "This is STORY 1, ENDING B, EMOTION SURPRISED.",
+        "neutral": "This is STORY 1, ENDING B, EMOTION NEUTRAL."
+      },
+      "options": []
+    }
+  ]
+}

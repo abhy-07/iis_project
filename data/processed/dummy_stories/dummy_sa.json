@@ -3,6 +3,7 @@
   "name": "Dummy Story 2 - Stardust Arena",
   "genre": "Debug / Test",
   "targetMoods": ["excited", "happy", "energized"],
+  "shortDescription": "an action-packed story about a futuristic arena battle.",
   "scenes": [
     {
       "id": "sa_scene1",

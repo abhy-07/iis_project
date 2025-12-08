@@ -3,6 +3,7 @@
   "name": "Dummy Story 3 - Abandoned Station",
   "genre": "Debug / Test",
   "targetMoods": ["neutral", "curiosity"],
+  "shortDescription": "a mystery story about an abandoned train station.",
   "scenes": [
     {
       "id": "as_scene1",

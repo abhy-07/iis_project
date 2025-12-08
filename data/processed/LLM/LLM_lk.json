@@ -1,0 +1,53 @@
+{
+  "id": "lantern_keeper",
+  "name": "The Lantern Keeper's Quiet Night",
+  "genre": "Cozy Fantasy / Comfort Story",
+  "targetMoods": ["tired", "comfort-seeking", "sad"],
+  "scenes": [
+    {
+      "id": "lk_intro",
+      "description": "The user arrives in a small village on a cliff at night and sees a single lantern by the sea.",
+      "type": "intro",
+      "llmHints": {
+        "general": "Set up a calm, safe, cozy bedtime atmosphere.",
+        "happy": "Light, grateful tone.",
+        "sad": "Very gentle, soothing tone.",
+        "fear": "Emphasize safety and guidance from the light."
+      },
+      "options": [
+        {
+          "id": "lk_intro_talk_keeper",
+          "text": "Walk up to the lantern keeper and say hello.",
+          "nextScene": "lk_meet_keeper"
+        },
+        {
+          "id": "lk_intro_sit",
+          "text": "Sit quietly near the lantern and watch the waves.",
+          "nextScene": "lk_sit_by_sea"
+        }
+      ]
+    },
+    {
+      "id": "lk_meet_keeper",
+      "description": "The user stands beside the old lantern keeper and interacts with him for the first time.",
+      "type": "middle",
+      "llmHints": {
+        "general": "Focus on calm conversation and emotional support.",
+        "sad": "Let the keeper listen a lot and answer in a reassuring way.",
+        "angry": "Let the keeper stay calm and grounded."
+      },
+      "options": [
+        {
+          "id": "lk_keeper_walk",
+          "text": "Ask the keeper to walk with you along the cliff.",
+          "nextScene": "lk_walk_cliff"
+        },
+        {
+          "id": "lk_keeper_stay",
+          "text": "Stay by the lantern and simply listen to him talk.",
+          "nextScene": "lk_sit_by_sea"
+        }
+      ]
+    }
+  ]
+}

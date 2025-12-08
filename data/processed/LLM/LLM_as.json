@@ -1,0 +1,148 @@
+{
+  "id": "abandoned_station",
+  "name": "The Abandoned Train Station",
+  "genre": "Light Mystery / Realistic Exploration",
+  "targetMoods": ["neutral", "curiosity"],
+  "scenes": [
+    {
+      "id": "at_intro",
+      "type": "intro",
+      "description": "The user steps into an old train station where the clocks have stopped, dust hangs in the air and the space feels quietly abandoned.",
+      "llmHints": {
+        "general": "Introduce a calm, slightly nostalgic atmosphere. Make the station feel empty but not threatening, with a subtle sense that it holds many untold stories.",
+        "happy": "Frame the station as a fun secret place to explore, like finding a hidden location in a city.",
+        "sad": "Let the quiet emptiness gently mirror the user’s mood but add small touches of softness, like warm light or gentle dust in sunbeams.",
+        "angry": "Emphasize the stillness and lack of arguments or noise, giving the user space for their thoughts to cool down.",
+        "disgust": "Acknowledge dust and age but present them as honest signs of time, not something gross or overwhelming.",
+        "fear": "Stress that the station is open and well lit, with clear visibility and nothing hiding in the shadows.",
+        "surprised": "Highlight the unexpected charm of the abandoned place and the feeling that it is quietly waiting to be noticed.",
+        "neutral": "Describe benches, posters and clocks in a matter-of-fact way, focusing on small details the user can observe."
+      },
+      "options": [
+        {
+          "id": "at_intro_waiting_room",
+          "text": "Explore the waiting room.",
+          "nextScene": "at_waiting_room"
+        },
+        {
+          "id": "at_intro_platform",
+          "text": "Walk out onto the platform.",
+          "nextScene": "at_platform"
+        }
+      ]
+    },
+    {
+      "id": "at_waiting_room",
+      "type": "middle",
+      "description": "The user enters the waiting room, with rows of empty seats, a dusty window and a crooked bulletin board on the wall.",
+      "llmHints": {
+        "general": "Focus on the quiet, paused feeling of a room that once held many people. Make it reflective rather than scary.",
+        "happy": "Invite the user to imagine past travelers and cheerful conversations that once filled the room.",
+        "sad": "Make the room feel gently patient, as if it is quietly okay with being empty and can hold the user’s feelings without pressure.",
+        "angry": "Show the solid floor and still furniture as things that can absorb and stabilize the user’s energy.",
+        "disgust": "Acknowledge torn posters or dust but balance them with the simple, satisfying geometry of seats and the large window.",
+        "fear": "Reassure the user that everything is clearly visible in the daylight and nothing is moving or hiding.",
+        "surprised": "Call attention to small, unexpected details, like a forgotten item or a ray of light making the dust sparkle.",
+        "neutral": "Describe the layout of seats, the condition of the walls and the slight sounds of the old room."
+      },
+      "options": [
+        {
+          "id": "at_waiting_object",
+          "text": "Pick up the small object left on the seat.",
+          "nextScene": "at_found_item"
+        },
+        {
+          "id": "at_waiting_back_platform",
+          "text": "Leave the waiting room and go to the platform.",
+          "nextScene": "at_platform"
+        }
+      ]
+    },
+    {
+      "id": "at_platform",
+      "type": "middle",
+      "description": "The user steps onto the platform where weeds grow between the tracks and a rusty sign sways slightly in the breeze.",
+      "llmHints": {
+        "general": "Make the platform feel open, airy and a bit lonely in a peaceful way. Focus on the tracks leading into the distance.",
+        "happy": "Emphasize the sense of freedom and the pleasant feeling of standing under the open sky.",
+        "sad": "Treat the platform as a place of quiet goodbyes and hellos, giving a soft, comforting sense of continuity.",
+        "angry": "Highlight the straight, unwavering lines of the tracks as something steady and reliable to mentally latch onto.",
+        "disgust": "Present rust and weeds as honest signs of time and nature taking over, not as something dirty or disturbing.",
+        "fear": "Reassure that the user can see far in both directions, and there are no hidden corners or threats.",
+        "surprised": "Underline how peaceful the platform feels without trains, as if time paused but did not break.",
+        "neutral": "Describe the tracks, sleepers, weeds and faint smells with observational, grounded language."
+      },
+      "options": [
+        {
+          "id": "at_platform_end",
+          "text": "Follow the tracks a short distance and then head home.",
+          "nextScene": "at_ending_walk"
+        },
+        {
+          "id": "at_platform_back_waiting",
+          "text": "Go back inside to explore the waiting room.",
+          "nextScene": "at_waiting_room"
+        }
+      ]
+    },
+    {
+      "id": "at_found_item",
+      "type": "middle",
+      "description": "Back in the waiting room, the user discovers a small, worn ticket with a faded destination name on one of the seats.",
+      "llmHints": {
+        "general": "Use the ticket as a focal point for imagining the lives of previous travelers. Keep the tone gentle and introspective.",
+        "happy": "Frame the ticket as a delightful little mystery, like a treasure from someone else’s adventure.",
+        "sad": "Let the user wonder about the emotions of the person who once held the ticket, creating a sense of shared humanity.",
+        "angry": "Encourage the user to focus on the concrete details of the ticket to pull attention away from angry thoughts.",
+        "disgust": "Make the ticket feel dry, harmless and simply old, more like a relic than something dirty.",
+        "fear": "Reassure that the ticket is just paper, small and familiar, with nothing threatening about it.",
+        "surprised": "Highlight how such a tiny forgotten object can suddenly make the station feel full of possible stories.",
+        "neutral": "Describe the texture, faded print and partial readability of the ticket in a straightforward manner."
+      },
+      "options": [
+        {
+          "id": "at_item_keep",
+          "text": "Put the ticket in your pocket and step out to the platform.",
+          "nextScene": "at_platform"
+        },
+        {
+          "id": "at_item_leave",
+          "text": "Place the ticket carefully back on the seat and look around once more.",
+          "nextScene": "at_ending_reflect"
+        }
+      ]
+    },
+    {
+      "id": "at_ending_walk",
+      "type": "ending",
+      "description": "The user follows the tracks for a short distance and then heads away from the station, which slowly becomes just a shape behind them.",
+      "llmHints": {
+        "general": "Close the story with a sense of gentle closure and quiet reflection as the station fades into the distance.",
+        "happy": "Present the walk as leaving with a secret, peaceful memory that makes the world feel richer.",
+        "sad": "Acknowledge that the user might still feel low, but show the station and open sky as soft companions walking with them.",
+        "angry": "Use the steady rhythm of footsteps and tracks to suggest the user’s thoughts are lining up and settling.",
+        "disgust": "Emphasize the fresh air and open space as cleansing and clearing compared to the worn interior.",
+        "fear": "Reassure that nothing frightening happened and that the path ahead now feels more trustworthy.",
+        "surprised": "Highlight the unexpected sense of connection to a place that is now fading into the background.",
+        "neutral": "Describe the sound of footsteps, the changing view of the station and the simple act of walking away."
+      },
+      "options": []
+    },
+    {
+      "id": "at_ending_reflect",
+      "type": "ending",
+      "description": "The user stands in the waiting room one last time, trying to imagine the day the station finally emptied and everyone left.",
+      "llmHints": {
+        "general": "End with a calm, reflective tone. Focus on memory, imagination and accepting the quiet of the station.",
+        "happy": "Frame this as a grateful moment, like visiting a peaceful photograph from another time.",
+        "sad": "Make the emptiness feel gentle and soft, like a pause rather than a harsh ending, allowing the user to breathe easier.",
+        "angry": "Invite the user to think of all the ordinary days that passed here, helping their own problems feel less sharp in comparison.",
+        "disgust": "Present the old room as imperfect but honest and calm, which can feel refreshing versus artificial perfection.",
+        "fear": "Emphasize that the room is just a simple, sunlit place made of dust, wood and glass, with nothing hiding in it.",
+        "surprised": "Highlight the unexpected attachment the user might feel to a place they only just discovered.",
+        "neutral": "Describe taking one last look at the benches, window and bulletin board, then accepting that it is time to go."
+      },
+      "options": []
+    }
+  ]
+}

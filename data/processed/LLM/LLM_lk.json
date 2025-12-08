@@ -3,6 +3,7 @@
   "name": "The Lantern Keeper's Quiet Night",
   "genre": "Cozy Fantasy / Comfort Story",
   "targetMoods": ["tired", "comfort-seeking", "sad"],
+  "shortDescription": "a heartwarming, soothing story about a lonely lantern keeper who offers comfort and companionship on a quiet night.",
   "scenes": [
     {
       "id": "lk_intro",

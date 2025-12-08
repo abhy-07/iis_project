@@ -3,6 +3,7 @@
   "name": "The Abandoned Train Station",
   "genre": "Light Mystery / Realistic Exploration",
   "targetMoods": ["neutral", "curiosity"],
+  "shortDescription": "a gentle, reflective story about exploring an old, abandoned train station.",
   "scenes": [
     {
       "id": "at_intro",

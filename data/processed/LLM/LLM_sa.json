@@ -3,6 +3,7 @@
   "name": "The Stardust Arena Trials",
   "genre": "Supernatural Sci-Fi Fantasy / Action",
   "targetMoods": ["excited", "happy", "energized"],
+  "shortDescription": "an action-packed, uplifting story about a cosmic arena where the user faces thrilling trials to prove their skill and courage.",
   "scenes": [
     {
       "id": "sa_intro",

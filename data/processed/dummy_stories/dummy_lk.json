@@ -3,6 +3,7 @@
   "name": "Dummy Story 1 - Lantern Keeper",
   "genre": "Debug / Test",
   "targetMoods": ["tired", "comfort-seeking", "sad"],
+  "shortDescription": "a heartwarming story about a lonely lantern keeper.",
   "scenes": [
     {
       "id": "lk_scene1",

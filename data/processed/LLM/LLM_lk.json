@@ -1,53 +1,121 @@
 {
   "id": "lantern_keeper",
-  "name": "The Lantern Keeper's Quiet Night",
+  "name": "The Lantern Keeper’s Quiet Night",
   "genre": "Cozy Fantasy / Comfort Story",
-  "shortDescription": "a heartwarming, soothing story about a lonely lantern keeper who offers comfort and companionship on a quiet night.",
+  "shortDescription": "A gentle night spent in a calm coastal village.",
   "scenes": [
     {
       "id": "lk_intro",
-      "description": "The user arrives in a small village on a cliff at night and sees a single lantern by the sea.",
       "type": "intro",
+      "description": "You arrive at a small cliffside village at night. A single lantern glows by the sea, steady and warm against the darkness.",
       "llmHints": {
-        "general": "Set up a calm, safe, cozy bedtime atmosphere.",
-        "happy": "Light, grateful tone.",
-        "sad": "Very gentle, soothing tone.",
-        "fear": "Emphasize safety and guidance from the light."
+        "general": "Soft, safe, and calming tone.",
+        "happy": "Light warmth and quiet gratitude.",
+        "sad": "Deeply soothing and reassuring.",
+        "angry": "Grounding and steady.",
+        "disgust": "Clean air and simple warmth.",
+        "fear": "Strong sense of safety.",
+        "surprised": "Gentle wonder.",
+        "neutral": "Calm, plain description."
       },
       "options": [
         {
-          "id": "lk_intro_talk_keeper",
-          "text": "Walk up to the lantern keeper and say hello.",
-          "nextScene": "lk_meet_keeper"
+          "id": "lk_intro_talk",
+          "text": "Greet the lantern keeper.",
+          "nextScene": "lk_middle_keeper"
         },
         {
           "id": "lk_intro_sit",
-          "text": "Sit quietly near the lantern and watch the waves.",
-          "nextScene": "lk_sit_by_sea"
+          "text": "Sit quietly by the lantern.",
+          "nextScene": "lk_middle_sea"
         }
       ]
     },
     {
-      "id": "lk_meet_keeper",
-      "description": "The user stands beside the old lantern keeper and interacts with him for the first time.",
+      "id": "lk_middle_keeper",
       "type": "middle",
+      "description": "You stand beside the lantern keeper. He offers a calm smile, as if time itself has slowed.",
       "llmHints": {
-        "general": "Focus on calm conversation and emotional support.",
-        "sad": "Let the keeper listen a lot and answer in a reassuring way.",
-        "angry": "Let the keeper stay calm and grounded."
+        "general": "Gentle presence.",
+        "happy": "Warm friendliness.",
+        "sad": "Quiet listening.",
+        "angry": "Steady calm.",
+        "disgust": "Clean light and warmth.",
+        "fear": "Reassuring confidence.",
+        "surprised": "Unexpected comfort.",
+        "neutral": "Simple interaction."
       },
       "options": [
         {
-          "id": "lk_keeper_walk",
-          "text": "Ask the keeper to walk with you along the cliff.",
-          "nextScene": "lk_walk_cliff"
+          "id": "lk_keeper_rest",
+          "text": "Stay and rest in the lantern’s light.",
+          "nextScene": "lk_ending_rest"
         },
         {
-          "id": "lk_keeper_stay",
-          "text": "Stay by the lantern and simply listen to him talk.",
-          "nextScene": "lk_sit_by_sea"
+          "id": "lk_keeper_farewell",
+          "text": "Thank him and leave quietly.",
+          "nextScene": "lk_ending_farewell"
         }
       ]
+    },
+    {
+      "id": "lk_middle_sea",
+      "type": "middle",
+      "description": "You sit near the lantern as waves move slowly below, the light steady and reassuring.",
+      "llmHints": {
+        "general": "Very slow, comforting pacing.",
+        "happy": "Peaceful enjoyment.",
+        "sad": "Soothing sounds and light.",
+        "angry": "Rhythmic calm.",
+        "disgust": "Fresh air and clean light.",
+        "fear": "Strong sense of protection.",
+        "surprised": "Quiet appreciation.",
+        "neutral": "Simple sensory details."
+      },
+      "options": [
+        {
+          "id": "lk_sea_rest",
+          "text": "Close your eyes and rest.",
+          "nextScene": "lk_ending_rest"
+        },
+        {
+          "id": "lk_sea_leave",
+          "text": "Stand up and head home.",
+          "nextScene": "lk_ending_farewell"
+        }
+      ]
+    },
+    {
+      "id": "lk_ending_rest",
+      "type": "ending",
+      "description": "You rest quietly by the lantern, breathing slowly as the night holds steady around you.",
+      "llmHints": {
+        "general": "Deep calm and closure.",
+        "happy": "Content peace.",
+        "sad": "Gentle reassurance.",
+        "angry": "Stillness replaces tension.",
+        "disgust": "Warmth and cleanliness.",
+        "fear": "Complete safety.",
+        "surprised": "Soft acceptance.",
+        "neutral": "Simple rest."
+      },
+      "options": []
+    },
+    {
+      "id": "lk_ending_farewell",
+      "type": "ending",
+      "description": "You leave the lantern behind, carrying its warmth with you as the village fades into the quiet night.",
+      "llmHints": {
+        "general": "Gentle farewell.",
+        "happy": "Warm memory.",
+        "sad": "Comfort lingers.",
+        "angry": "Calm perspective.",
+        "disgust": "Clean air and distance.",
+        "fear": "Nothing follows.",
+        "surprised": "Unexpected warmth.",
+        "neutral": "Calm ending."
+      },
+      "options": []
     }
   ]
 }

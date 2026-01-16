@@ -75,3 +75,6 @@ IIS_PROJECT/
 
 ## License
 Educational / academic use only.
+
+## Future work
+Future improvements include strengthening emotion detection by exploring alternative datasets, models, or multimodal approaches. Further development of the story content would be necessary for real-world applicability in order to enhance user engagement. This would include richer storylines, more branching options, and expanded themes. Finally, extensive user testing, along with improved error handling and fallback strategies. In order to ensure the system being intuitive, robust, and easy to understand for first-time users.
